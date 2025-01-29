@@ -1,0 +1,15 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section3{
+  @include flex(row,center,space-around,50px);
+  &-block1{
+    width: 25%;
+    &__title{
+      @include Syne(56px,700,67.2px);
+    }
+    &__subtitle{
+      @include Syne(18px,500,24px);
+      opacity: 0.6;
+    }
+  }
+}

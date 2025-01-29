@@ -1,0 +1,25 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section2{
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
+  &-container1{
+    text-align: center;
+    gap:0;
+    &__title{
+    @include Syne(20px,600,4px);
+    }
+    &__subtitle{
+      @include Syne(56px,700,17.2px);
+    }
+  }
+}
+.cards{
+  padding: 0 150px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+}

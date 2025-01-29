@@ -1,0 +1,31 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+
+.section1{
+  width: 100%;
+  background-image: url("../../../assets/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &-container1{
+    padding: 25px 50px;
+    width: 22%;
+    &__title{
+      @include Syne(56px,700,67.2px);
+    }
+    &__text{
+      width: 80%;
+      @include Syne(18px,500,24px);
+      color: $secondary-color;
+      opacity: 0.6;
+    }
+    &__btn{
+      background-color: $button-color;
+      color: $main-color;
+      border-radius: 32px;
+      border-color: $button-color;
+      @include Syne(16px,700,19.2px);
+      padding: 10px 26px;
+    }
+  }
+}

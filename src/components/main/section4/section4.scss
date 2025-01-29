@@ -1,0 +1,23 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section4{
+  @include flex(column,center,center,0);
+  padding: 50px;
+  text-align: center;
+  &__title{
+    @include Syne(24px,700,28.8px);
+    color: $button-color;
+  }
+  &__text{
+    width: 80%;
+    @include Syne(48px,500,57.6px);
+  }
+  &-block1{
+    &__img{
+    }
+    &__name{
+      @include Syne(24px,700,28.8px);
+      opacity: 0.6;
+    }
+  }
+}

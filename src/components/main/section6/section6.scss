@@ -1,0 +1,27 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section6{
+  @include flex(row,center,center,0);
+  &-background{
+    width: 90%;
+    background-image: url("https://www.figma.com/file/rGmoHCx8Rge1YqCBgqUWx1/image/aa203be8d87ebbcb96259df702f3e0c9639ed2ce");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex(column,flex-end,center,15px);
+    text-align: left;
+    padding: 65px 250px;
+    &__title{
+      @include Syne(57px, 700 , 67.2px);
+      color: $main-color;
+    }
+    &__subtitle{
+      width: 30%;
+      @include Syne(24px, 700 , 28.8px);
+      color: $main-color;
+    }
+    &-icons{
+      @include flex(row,center,center,25px);
+      padding: 0 55px;
+    }
+  }
+}

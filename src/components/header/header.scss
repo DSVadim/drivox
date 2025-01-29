@@ -1,0 +1,25 @@
+@import "../../scss/vars";
+@import "../../scss/mixin";
+.header{
+  padding: 25px 65px;
+  @include flex(row, center, space-between, 0);
+}
+.buttons{
+  @include flex(row,center,center,25px);
+  &__btn1{
+    padding-right: 18px;
+    @include Syne(16px,700,19.2px);
+    background-color: transparent;
+    color:$button-color;
+    border-color: transparent;
+    border-right: 2px solid gray;
+  }
+  &__btn2{
+    padding: 10px 20px;
+    @include Syne(16px,700,19.2px);
+    background-color: $button-color;
+    color: $main-color;
+    border-radius: 32px;
+    border-color: transparent;
+  }
+}

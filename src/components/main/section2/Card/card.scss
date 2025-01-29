@@ -1,0 +1,40 @@
+@import '../../../../scss/mixin';
+@import '../../../../scss/vars';
+.card{
+  padding: 15px 15px 0 15px;
+  text-align: center;
+  width: 42%;
+  border-radius: 10px;
+  &__title{
+  @include Syne(24px,700,28.8px);
+  }
+  &-block1{
+    @include flex(row,center,center,50px);
+    &__textbox{
+      &-text1{
+        @include Syne(16px,600,19.2px);
+        opacity: 0.6;
+      }
+      &-text2{
+        @include Syne(24px,700,28.8px);
+      }
+    }
+    &__btn{
+      @include Syne(16px,700,19.2px);
+      color:$main-color;
+      background-color: $button-color;
+      padding: 10px 26px;
+      border-radius: 32px;
+      border-color: transparent;
+    }
+  }
+}
+.card:hover{
+  background-color: $button-color;
+  color: $main-color;
+  .card-block1__btn{
+    background-color: $main-color;
+    color: $button-color;
+  }
+}
+

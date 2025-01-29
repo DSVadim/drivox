@@ -1,0 +1,7 @@
+@import "scss/vars";
+@import "scss/mixin";
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+body{
+  background-color: $main-color;
+  color:black;
+}

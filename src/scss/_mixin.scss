@@ -1,0 +1,13 @@
+@mixin flex($fd,$ai,$js,$gp) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $js;
+  gap: $gp;
+}
+@mixin Syne($fs,$fw,$lh){
+  font-family: Syne;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}

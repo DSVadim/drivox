@@ -1,0 +1,19 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.nav{
+  &__list{
+    @include flex(row,center,center,55px);
+  }
+  &__item{
+
+  }
+  &__link{
+  @include Syne(16px,400,19.6px);
+    text-decoration: none;
+    color: black;
+  }
+}
+ul{
+  text-decoration: none;
+  list-style-type: none;
+}
