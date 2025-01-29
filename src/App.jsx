@@ -6,7 +6,7 @@ import About from "./Pages/About/About.jsx";
 function App() {
 
   return (
-      <BrowserRouter basename="/drivoxe">
+      <BrowserRouter basename="/drivox">
           <Routes>
               <Route path="/" element={<Layout />} />
               <Route path="About" element={<About/>}/>
