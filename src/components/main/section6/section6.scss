@@ -9,7 +9,8 @@
     background-repeat: no-repeat;
     @include flex(column,flex-end,center,15px);
     text-align: left;
-    padding: 65px 250px;
+    border-radius: 32px;
+    padding: 105px 250px;
     &__title{
       @include Syne(57px, 700 , 67.2px);
       color: $main-color;

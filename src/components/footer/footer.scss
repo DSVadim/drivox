@@ -1,2 +1,41 @@
 @import "../../scss/vars";
 @import "../../scss/mixin";
+.footer{
+  @include flex(row,center,space-around,100px);
+  &-block1{
+    &__title{
+      @include Syne(56px, 700, 67.2px);
+    }
+    &__subtitle{
+      @include Syne(18px, 500, 24px);
+      opacity: 0.6;
+    }
+    &__inp{
+      @include Syne(14px, 500, 16px);
+      border-radius: 32px;
+      opacity: 0.6;
+      padding: 15px 350px 15px 15px;
+    }
+  }
+  &-block2{
+    margin-top: 45px;
+    @include flex(column,center,center,35px);
+    .nav{
+      @include flex(row,center,center,15px);
+      &__title{
+        @include Syne(24px, 700, 28.8px);
+      }
+      &__list{
+        @include flex(column,flex-start,center,0);
+      }
+      &__link{
+        @include Syne(18px, 500, 24px);
+      }
+    }
+    &__text{
+      @include Syne(14px, 500, 16px);
+      opacity: 0.6;
+      margin-right: 215px;
+    }
+  }
+}
