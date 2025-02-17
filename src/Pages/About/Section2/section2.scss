@@ -1,0 +1,20 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section2-about{
+  padding-top: 100px;
+  width: 100%;
+@include flex(row,center,center,55px);
+  .section2-texts{
+    width: 35%;
+    .section2-texts__subtitle{
+      @include Syne(20px,600,24px);
+    }
+    .section2-texts__title{
+      @include Syne(56px,700,67.2px);
+    }
+    .section2-texts__text{
+      @include Syne(18px,500,24px);
+      opacity: 0.6;
+    }
+  }
+}

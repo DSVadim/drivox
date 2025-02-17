@@ -1,0 +1,35 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section3-faqs {
+  @include flex(row, center, center, 0);
+
+  .section3-background {
+    width: 60%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/851a/4e83/bd05b294b7d8cea00e3236c54aa97111?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MpEMg2xntYtz7Smdzbb19WxF4-MILIvBRl-h79rdVki9a59GhAprJQAhUoqcR4RVXwQees343lW~GPffMuqKC35huIKgNIHC4Kg91cHzNM~KuIeTmJzWBKgFdcfUPuuq8jrlvSReB4hENaRE1ytiFLY7bQmrhl6TDf8Q5~8diSuPvsvwGHh6es-FH4ZN7PwVwMqPqTOWs4gInyDGDBpPUdNP6I5l8xvrgMLSliBQjr9aB8mQGYeoRUjfg3q24Z-4fJjOtZ7rqENQvewYFZhIo7O30tc2zCAI7C7z3kmf2ZqMBkggxghPthTbfnnHqfFZBsBNCf7pq4WjtK9JG2YHjg__");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex(column, flex-start, center, 15px);
+    text-align: left;
+    border-radius: 32px;
+    padding: 105px 250px;
+
+    &__title {
+      @include Syne(57px, 700, 67.2px);
+      color: $main-color;
+      width: 65%;
+    }
+    &__subtitle{
+      @include Syne(20px, 600, 24px);
+      color: $main-color;
+      width: 65%;
+    }
+    &__btn{
+      @include Syne(16px, 700, 19.2px);
+      background-color: $button-color;
+      color: $main-color;
+      border-color: transparent;
+      border-radius: 32px;
+      padding:10px 26px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section3-about{
+  @include flex(column,center,center,100px);
+  .section3__title{
+   @include Syne(57px,700,67.2px);
+  }
+  .section3-cards{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 28px;
+    .section3-cards__card{
+      @include flex(column,flex-start,flex-start,32px);
+      padding: 32px;
+      background-color: $third-color;
+      border-radius: 10px;
+      &-box{
+        @include flex(row,center,center,1px);
+        &-title{
+          @include Syne(24px,700,28px);
+        }
+      }
+      &-text{
+        @include Syne(18px,500,24px);
+        opacity: 0.6;
+      }
+    }
+    .section3-cards__card:hover{
+      border: 0.5px solid $button-color;
+      background-color: $main-color;
+    }
+  }
+}

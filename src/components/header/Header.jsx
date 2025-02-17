@@ -1,10 +1,11 @@
 import Logo from '../../assets/Logo.svg';
 import Nav from './nav/Nav.jsx';
 import "./header.scss"
+import {Link} from "react-router-dom";
 function Header(){
     return(
         <header className={'header'}>
-             <img className={'logo'} src={Logo} alt={'Logo'} />
+            <Link to={"/"}><img className={'logo'} src={Logo} alt={'Logo'}/></Link>
             <Nav/>
             <div className={'buttons'}>
                 <button className={'buttons__btn1'}>Contact</button>

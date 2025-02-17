@@ -1,0 +1,55 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section4-about{
+  padding: 100px 0;
+  @include flex(column,center,center,0);
+  .section4__title{
+    @include Syne(20px,600,24px);
+  }
+  .section4__subtitle{
+    @include Syne(56px,700,47.2px);
+  }
+  .section4-cards{
+    width: 100%;
+    @include flex(column,center,center,0);
+    &-cards1{
+      margin-right: 550px;
+      @include flex(row,center,center,250px);
+      &-card{
+        @include flex(row,center,center,25px);
+        &-texts {
+          @include flex(column,flex-start,flex-start,5px);
+          &__title {
+            @include Syne(24px, 700, 28.8px);
+          }
+
+          &__subtitle {
+            @include Syne(18px, 500, 24px);
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    &-cards2{
+      margin-top: 150px;
+      margin-left: 550px;
+      @include flex(row,center,center,250px);
+      &-card {
+        @include flex(row, center, center, 25px);
+
+        &-texts {
+          @include flex(column,flex-start,flex-start,5px);
+
+          &__title {
+            @include Syne(24px, 700, 28.8px);
+          }
+
+          &__subtitle {
+            @include Syne(18px, 500, 24px);
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section2-cars{
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.cards{
+  padding: 0 150px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+}

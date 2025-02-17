@@ -4,7 +4,6 @@ import Section3  from "./section3/Section3.jsx";
 import Section4  from "./section4/Section4.jsx";
 import Section5 from "./section5/Section5.jsx";
 import Section6 from "./section6/Section6.jsx";
-import Footer from "../footer/Footer.jsx";
 import './main.scss'
 function Main(){
     return(
@@ -15,7 +14,6 @@ function Main(){
                 <Section4/>
                 <Section5/>
                 <Section6/>
-                <Footer/>
             </main>
     )
 }

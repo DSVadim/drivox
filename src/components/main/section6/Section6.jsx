@@ -3,7 +3,7 @@ import Apple from '../../../assets/apple.svg'
 import Google from '../../../assets/google.svg'
 function Section6(){
     return(
-        <div className={'section6'}>
+        <section className={'section6'}>
             <div className={'section6-background'}>
                 <p className={'section6-background__title'}>Ready to Go?</p>
                 <p className={'section6-background__subtitle'}>Book your car wherever you are  and ride with us now!</p>
@@ -12,7 +12,7 @@ function Section6(){
                     <img className={'section6-background-icons__google'} src={Google} alt={'google'} />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

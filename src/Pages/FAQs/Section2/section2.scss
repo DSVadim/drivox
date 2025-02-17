@@ -1,0 +1,27 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+
+.section2-faqs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  .section2-container{
+    @include flex(column,center,space-between,0);
+    &__title{
+      @include Syne(24px,700,28.8px);
+    }
+    &-box{
+      width: 50%;
+      &-texts{
+        @include flex(row,center,space-around,0);
+       &__title{
+         @include Syne(18px,500,24px);
+        }
+      }
+      &__subtitle{
+        display: none;
+      }
+    }
+  }
+}

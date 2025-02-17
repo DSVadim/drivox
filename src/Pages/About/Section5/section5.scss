@@ -1,0 +1,25 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section5-about{
+  @include flex(row,center,space-around,0);
+  .section5-texts{
+    width: 35%;
+    &__subtilte{
+      @include Syne(20px,600,24px);
+    }
+    &__title{
+      @include Syne(56px,700,67.2px);
+    }
+  }
+  .section5-block{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    &-card{
+      width: 55%;
+      &__text{
+        @include Syne(16px,700,19.2px);
+      }
+    }
+  }
+
+}

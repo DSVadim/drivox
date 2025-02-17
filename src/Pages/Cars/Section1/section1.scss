@@ -1,0 +1,11 @@
+@import "../../../scss/mixin";
+@import "../../../scss/vars";
+.section1-cars{
+  text-align: center;
+  .section1__title{
+    @include Syne(56px,700,67.2px);
+  }
+  .section1__img{
+    width: 100%;
+  }
+}

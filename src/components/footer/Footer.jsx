@@ -1,4 +1,6 @@
 import './footer.scss'
+import {Link} from "react-router-dom";
+import FAQs from "../../Pages/FAQs/FAQs.jsx";
 function Footer(){
     return(
         <footer className={'footer'}>
@@ -19,7 +21,7 @@ function Footer(){
                         <p className={'nav__title'}>The Cars</p>
                         <li className={'nav__item'}><a className={'nav__link'}>How it works</a></li>
                         <li className={'nav__item'}><a className={'nav__link'}>Pick a car</a></li>
-                        <li className={'nav__item'}><a className={'nav__link'}>FAQs</a></li>
+                        <li className={'nav__item'}><Link to={'/FAQs'} className={'nav__link'}>FAQs</Link></li>
                     </ul>
                     <ul className={'nav__list'}>
                         <p className={'nav__title'}>Social Media</p>

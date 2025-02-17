@@ -8,16 +8,31 @@
     @include Syne(24px,700,28.8px);
     color: $button-color;
   }
-  &__text{
-    width: 80%;
-    @include Syne(48px,500,57.6px);
-  }
-  &-block1{
-    &__img{
-    }
-    &__name{
-      @include Syne(24px,700,28.8px);
-      opacity: 0.6;
+  &-buttons{
+    @include flex(row,center,space-around,0);
+    &__btn {
+      border-color: transparent;
     }
   }
+ &-container1 {
+   &-block1 {
+     @include flex(row, center, space-around, 0);
+
+
+     &__text {
+       width: 80%;
+       @include Syne(48px, 500, 57.6px);
+     }
+   }
+
+   &-block2 {
+     &__img {
+     }
+
+     &__name {
+       @include Syne(24px, 700, 28.8px);
+       opacity: 0.6;
+     }
+   }
+ }
 }
